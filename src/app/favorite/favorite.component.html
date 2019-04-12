@@ -1,0 +1,40 @@
+<!-- <h1>ngIf</h1> -->
+
+
+<!-- <div *ngIf="courses.length > 0; then coursesList else noCourses"></div>
+
+<ng-template #coursesList>
+	<ul>
+		<li *ngFor="let course of courses">{{course}}</li>
+	</ul>
+</ng-template>
+
+<ng-template #noCourses>
+	<p>No courses Available</p>
+</ng-template> -->
+
+<!-- <div [hidden]="courses.length == 0">
+	list of Course
+</div>
+
+<div [hidden]="courses.length > 0">
+	No courses yet
+</div> -->
+
+<!-- <h2>ngSwitch</h2>
+
+<ul class="nav nav-pills">
+	<li class="nav-item"><a class="nav-link" [class.active]="viewMode == 'map'" (click)="viewMode = 'map'">Map View</a></li>
+	<li class="nav-item"><a class="nav-link" [class.active]="viewMode == 'list'" (click)="viewMode = 'list'">List View</a></li>
+</ul>
+
+<div [ngSwitch]="viewMode">
+	<div *ngSwitchCase="'map'">Map View Content</div>
+	<div *ngSwitchCase="'list'">List View Content</div>
+	<div *ngSwitchDefault>Other wise</div>
+</div> -->
+
+<h2>ngFor</h2>
+<ul>
+	<li *ngFor="let course of courses; even as isEven">{{course.name}} <span *ngIf="isEven">(Even)</span></li>
+</ul>
